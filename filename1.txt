@@ -11,6 +11,7 @@ filename = "lambda_function_payload.zip"  # Path to your Lambda function code
   runtime = "python3.8"                # Runtime environment for your Lambda function
 }
  
+ 
 resource "aws_iam_role" "lambda_role" {
   name = "example_lambda_role"  # Name of your IAM role for Lambda execution
   assume_role_policy = jsonencode({
